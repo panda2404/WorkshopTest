@@ -1,0 +1,12 @@
+hướng đi cho dò xổ số (test đầu vào của xưởng):
+
+1. random kết quả -> đem đi so sánh với dữ liệu nhập vào.
+- dùng mảng so sánh từng số -> kô biết tách số đầu vào -> dùng phương thức tách số (i = x % 10 chia lấy số dư sau đó lấy x chia cho 10 để có x mới) để có đc dãy ký tự ngược
+ + vd: x = 145, i = 0;
+	i = x%10 = 145%10 = 5 -> gán vô mảng arr vị trí cuối
+	x (mới) = x (cũ)/10 = 145/10 = 14 -> tiếp tục vòng lặp như trên đến hết x <= 0.
+-> chọn cách này.
+- so sánh số vs số -> kô đc tại có nhiều loại giải  kết quả khác nhau (2->6 số).
+
+2. lấy kết quả từ web dò kết quả xuống Database -> đem so sánh với dữ liệu đầu vào.
+- kô biết cách lấy dữ liệu web cho Java.
